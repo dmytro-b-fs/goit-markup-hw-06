@@ -315,6 +315,8 @@ header {
   position: relative;
   background-color: transparent;
   border: none;
+  width: 24px;
+  height: 24px;
 }
 
 .burger-menu-btn-icon {
@@ -494,6 +496,7 @@ header {
 @media only screen and (min-width:768px) {
   .features-item {
     display: block;
+    gap: 0px;
     max-width: 356px;
   }
 }
@@ -501,6 +504,7 @@ header {
 @media only screen and (min-width:1158px) {
   .features-item {
     display: block;
+    gap: 0px; 
     max-width: 264px;
   }
 }
@@ -532,7 +536,8 @@ header {
     font-weight: 500;
     font-size: 20px;
     text-align: left;
-    margin: 8px 0;
+    margin-bottom: 8px; 
+    margin-top: 8px;
   }
 
   .feature-descr {
