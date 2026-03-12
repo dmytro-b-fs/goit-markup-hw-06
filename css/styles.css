@@ -43,6 +43,7 @@ textarea {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 body {
@@ -234,16 +235,8 @@ header {
     box-sizing: content-box;
     padding-top: 16px;
     padding-bottom: 16px;
-    /* margin-top: 16px;
-    margin-bottom: 16px; */
   }
 }
-
-/* @media only screen and (min-width:1158px) {
-  .logo-header {
-    margin-right: 76px;
-  }
-} */
 
 .logo-accent {
   color: #4d5ae5;
@@ -265,11 +258,6 @@ header {
   }
 }
 
-@media only screen and (min-width:1158px) {
-  .navigation {
-    
-  }
-}
 
 .nav-link {
   padding: 24px 0;
@@ -680,19 +668,6 @@ header {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
-@media only screen and (min-width:1158px){
-  .portfolio-item {
-    max-width: 360px;
-    box-shadow:none;
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  .portfolio-item:hover {
-    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  }
-
-}
-
-
 .portfolio-item {
   max-width: 360px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -700,6 +675,18 @@ header {
 
 .portfolio-item:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
+}
+
+@media only screen and (min-width:1158px){
+  .portfolio-item {
+    max-width: 360px;
+    box-shadow: none;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .portfolio-item:hover {
+    box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  }
 
 }
 
@@ -1280,7 +1267,7 @@ footer {
 /* MODAL section END*/
 
 /* mobile-menu section */
-.mobile-menu {
+.mobile-menu-container {
   position: fixed;
   top: 0;
   left: 0;
@@ -1298,7 +1285,7 @@ footer {
 }
 
 @media only screen and (max-width:767.98px){
-  .mobile-menu.is-open {
+  .mobile-menu-container.is-open {
     transform: translateY(0);
     opacity: 1;
     visibility: visible;
@@ -1308,7 +1295,7 @@ footer {
 
 /* по идее оно не должно изза предыдущего @media открываться на 768px и больше. но хай буде. */
 @media only screen and (min-width:768px){
-  .mobile-menu{
+  .mobile-menu-container{
     display: none;
   }
 }
@@ -1348,6 +1335,9 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+}
+.mobile-menu-nav-container{
   margin-bottom: auto;
 }
 
