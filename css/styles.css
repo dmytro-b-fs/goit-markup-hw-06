@@ -163,7 +163,12 @@ header {
 .header-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+}
+
+@media only screen and (max-width:767.98px) {
+  .header-container {
+    justify-content: space-between;
+  }
 }
 
 @media only screen and (min-width:768px) {
@@ -228,6 +233,7 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 40px;
   }
 }
 
@@ -570,6 +576,8 @@ header {
 /* FEATURES section END*/
 
 /* TEAM section*/
+
+
 .team-list {
   display: flex;
   flex-direction: column;
@@ -677,18 +685,14 @@ header {
 }
 
 .portfolio-item {
-    max-width: 360px;
+    max-width: 288px;
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
 
-.portfolio-item {
-  max-width: 360px;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.portfolio-item:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-
+@media only screen and (min-width:768px){
+  .portfolio-item {
+    max-width: 356px;
+  }
 }
 
 @media only screen and (min-width:1158px){
@@ -700,7 +704,6 @@ header {
   .portfolio-item:hover {
     box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   }
-
 }
 
 .portfolio-item:hover .overlay {
@@ -805,8 +808,8 @@ footer {
     flex-shrink: 0;
     flex-grow: 0;
     flex-wrap: nowrap;
-    padding: 0 15px;
     align-items: baseline;
+    padding: 0 15px;
   }
 }
 
