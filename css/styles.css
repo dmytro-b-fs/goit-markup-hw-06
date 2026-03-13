@@ -163,15 +163,16 @@ header {
 .header-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-@media only screen and (max-width:767.98px) {
+/* @media only screen and (max-width:767.98px) {
   .header-container {
     justify-content: space-between;
   }
-}
+} */
 
-@media only screen and (min-width:768px) {
+/* @media only screen and (min-width:768px) {
   .header-container {
     gap: 120px
   }
@@ -181,7 +182,7 @@ header {
   .header-container {
     gap: 332px
   }
-}
+} */
 
 .logo-nav-container {
   display: flex;
@@ -482,9 +483,8 @@ header {
 @media only screen and (min-width:1158px) {
   .features-list {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     gap: 24px;
     flex-direction: row;
   }
